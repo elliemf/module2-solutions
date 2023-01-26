@@ -7,12 +7,12 @@
 .navbar{
 
 border: none;
-background-color: black;
+background-color: #0000;
 color: #61122F;
 }
 body{
 	background-color: #61122F;
-	color: white;
+	color: #f9f9f9;
 }
 .glyphicon{
 	font-size: 30px;
@@ -26,7 +26,7 @@ body{
 }
 .container
 {
-	background-color: grey;
+	background-color: #787878;
 }
 .text-center{
 	font-size: 30px;
