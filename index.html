@@ -1,152 +1,61 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Our Menu</title>
+  <title>Our Menu</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
-<style>
-* {box-sizing: border-box;}
-h1 {text-align: center;}
-p {background-color: #B4B4B4; border: 2px solid black; height: 150px; margin-right: 10px; padding: 40px 10px 5px 10px; overflow: hidden;}
-#container {position: relative;}
-#p1 {background-color: #ED8585; position: absolute; top: 0; right: 0; font-weight: bold; height: 35px; width: 120px; padding: 10px; text-align: center; font-family: Arial, Helvetica, sans-serif;}
-#p2 {background-color:#7DC7FF; color: white; position: absolute; top: 0; right: 0; font-weight: bold; height: 35px; width: 120px; padding: 10px; text-align: center; font-family: Arial, Helvetica, sans-serif;}
-#p3 {background-color: #FF7DD1; position: absolute; top: 0; right: 0; font-weight: bold; height: 35px; width: 120px; padding: 10px; text-align: center; font-family:Arial, Helvetica, sans-serif;}
-.row {width: 100%;}
-
-
-/********** Large devices **********/
-@media (min-width: 992px) {.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {float: left;}
-  .col-lg-1 {
-    width: 8.33%;
-  }
-  .col-lg-2 {
-    width: 16.66%;
-  }
-  .col-lg-3 {
-    width: 25%;
-  }
-  .col-lg-4 {
-    width: 33.33%;
-  }
-  .col-lg-5 {
-    width: 41.66%;
-  }
-  .col-lg-6 {
-    width: 50%;
-  }
-  .col-lg-7 {
-    width: 58.33%;
-  }
-  .col-lg-8 {
-    width: 66.66%;
-  }
-  .col-lg-9 {
-    width: 74.99%;
-  }
-  .col-lg-10 {
-    width: 83.33%;
-  }
-  .col-lg-11 {
-    width: 91.66%;
-  }
-  .col-lg-12 {
-    width: 100%;
-  }
-}
-/********** Medium devices **********/
-@media (min-width: 768px) and (max-width: 991px) {.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {float: left;}
-  .col-md-1 {
-    width: 8.33%;
-  }
-  .col-md-2 {
-    width: 16.66%;
-  }
-  .col-md-3 {
-    width: 25%;
-  }
-  .col-md-4 {
-    width: 33.33%;
-  }
-  .col-md-5 {
-    width: 41.66%;
-  }
-  .col-md-6 {
-    width: 50%;
-  }
-  .col-md-7 {
-    width: 58.33%;
-  }
-  .col-md-8 {
-    width: 66.66%;
-  }
-  .col-md-9 {
-    width: 74.99%;
-  }
-  .col-md-10 {
-    width: 83.33%;
-  }
-  .col-md-11 {
-    width: 91.66%;
-  }
-  .col-md-12 {
-    width: 100%;
-  }
-}
-/********** Mobile **********/
-@media (max-width: 767px) {.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {float: left;}
-  .col-sm-1 {
-    width: 8.33%;
-  }
-  .col-sm-2 {
-    width: 16.66%;
-  }
-  .col-sm-3 {
-    width: 25%;
-  }
-  .col-sm-4 {
-    width: 33.33%;
-  }
-  .col-sm-5 {
-    width: 41.66%;
-  }
-  .col-sm-6 {
-    width: 50%;
-  }
-  .col-sm-7 {
-    width: 58.33%;
-  }
-  .col-sm-8 {
-    width: 66.66%;
-  }
-  .col-sm-9 {
-    width: 74.99%;
-  }
-  .col-sm-10 {
-    width: 83.33%;
-  }
-  .col-sm-11 {
-    width: 91.66%;
-  }
-  .col-sm-12 {
-    width: 100%;
-  }
-}
-</style>
 <body>
-<div class="row">
-<h1>Our Menu</h1>
-  <div class="col-lg-4 col-md-6 col-sm-12" id="container">
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis ipsa aspernatur, consequuntur et, ullam maiores non nisi magnam distinctio eos eatae, in iste quia repellendus culpa non rerum itaque illum sint aliquid mollitia fuga laudantium, cum eius ratione tempore excepturi, ipsum nihil aspernatur recusandae laboriosam blanditiis magni! Ex illo modi exercitationem consectetur incidunt autem adipisci eligendi corporis non, veniam ullam voluptatum nesciunt, maxime totam tenetur distinctio aperiam esse eum natus. voluptatem ad minus ullam facilis facere eum. Nisi tenetur corporis illo explicabo vel iure aperiam sit quia natus magni, fuga itaque sed.</p>
-  	<p id="p1">Chicken</p>
-  	</div>  
-  <div class="col-lg-4 col-md-6 col-sm-12" id="container"><p>Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Quis, iste, nostrum dignissimos unde officiis doloremque debitis fugit ut! Voluptate odit nam unde harum aliquam aperiam quibusdam quod corrupti provident pariatur!</p>
-  	<p id="p2">Beef</p>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" >Food, LLC</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+    
+      <ul class="nav navbar-nav navbar-right" >
+        <li style>
+        <a href="#" > 
+        <span class="glyphicon glyphicon-cutlery"></span> chicken</a>
+        </li>
+        <li>
+        <a href="#" >
+        <span class="glyphicon glyphicon-info-sign"></span> beef</a>
+        </li>
+        <li>
+        <a href="#">
+        <span class="glyphicon glyphicon-certificate"></span> sushi</a>
+        </li>
+      </ul>
+    </div>
   </div>
-  <div class="col-lg-4 col-md-12 col-sm-12" id="container"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae obcaecati sint fugit. Sequi ullam itaque quibusdam, rerum ipsam quae nisi asperiores ipsa id? Dolorum minima, at accusamus earum illum molestias autem quisquam debitis! Quam, ipsam, vero saepe sequi dolor facilis eius officia vitae eos obcaecati aperiam? Voluptatem et sequi quam. Beatae nisi vero, doloremque amet eligendi laudantium consectetur mollitia dolorum doloribus accusamus et maiores necessitatibus, culpa aliquid corporis aperiam! Excepturi aspernatur quas quod non!.</p>
-  	<p  id="p3">Sushi</p>
-  </div>
-	</div>	
+</nav>
+<br>
+<br>  
+<h1><p class="text-center">Our Menu</p></h1>
+
+
+<div id="main-content" class="container">
+  <div id="home-tiles" class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+            
+            <p id="chicken">
+          <h2>Chicken</h2>
+              dem Gesetz steht ein Türhüter. Zu diesem Türhüter kommt ein Mann vom Lande und bittet um Eintritt in das Gesetz. Aber der Türhüter sagt, daß er ihm jetzt den Eintritt nicht gewähren könne. Der Mann überlegt und fragt dann, ob er also später werde eintreten dürfen. "Es ist möglich", sagt der Türhüter, "jetzt aber nicht." Da das Tor zum Gesetz offensteht wie immer und der Türhüter beiseite tritt, bückt sich der Mann, um durch das Tor in das Innere zu sehen. Als der Türhüter das merkt, lacht er und sagt: "Wenn es dich so lockt, versuche es doch, trotz meines Verbotes hineinzugehen. Merke aber: Ich bin mächtig. Und ich bin nur der unterste Türhüter. Von Saal zu Saal stehn aber Türhüter, einer mächtiger als der andere. Schon den Anblick des dritten kann nicht einmal ich mehr ertragen." Solche Schwierigkeiten hat der Mann vom Lande nicht erwartet; das Gesetz soll doch jedem und immer zugänglich sein, denkt er, aber als er jetzt den Türhüter in seinem Pelzmantel genauer ansieht, seine große Spitznase, den langen dünnen, schwarzen tatarischen Bart, entschließt er sich, doch lieber zu warten, bis er die Erlaubnis zum Eintritt bekommt. Der Türhüter gibt ihm einen Schemel und läßt ihn seitwärts von der Tür sich niedersetzen. Dort sitzt er Tage und Jahr
+            </p>
+      </div>
+    </div>
+</div>
+
 </body>
 </html>
