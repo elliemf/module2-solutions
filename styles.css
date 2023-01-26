@@ -1,15 +1,48 @@
 <style>
-* {box-sizing: border-box;}
-h1{text-align: center;}
-p {background-color: #B4B4B4; border: 2px solid black; height: 150px; margin-right: 10px; padding: 40px 10px 5px 10px; overflow: hidden;}
-#container {position: relative;}
-#p1 {background-color: #ED8585; position: absolute; top: 0; right: 0; font-weight: bold; height: 35px; width: 120px; padding: 10px; text-align: center; font-family: Arial, Helvetica, sans-serif;}
-#p2 {background-color:#7DC7FF; color: white; position: absolute; top: 0; right: 0; font-weight: bold; height: 35px; width: 120px; padding: 10px; text-align: center; font-family: Arial, Helvetica, sans-serif;}
-#p3 {background-color: #FF7DD1; position: absolute; top: 0; right: 0; font-weight: bold; height: 35px; width: 120px; padding: 10px; text-align: center; font-family:Arial, Helvetica, sans-serif;}
-.row {width: 100%;}
+*{
+	margin: 0;
+	padding: 0;
+	
+}
+.navbar{
 
+border: none;
+background-color: black;
+color: #61122F;
+}
+body{
+	background-color: #61122F;
+	color: white;
+}
+.glyphicon{
+	font-size: 30px;
+	color:#61122F; 
+}
 
-/********** Large devices **********/
+.center{
+	width: 90%;
+	background-color: #616161;
+
+}
+.container
+{
+	background-color: grey;
+}
+.text-center{
+	font-size: 30px;
+}
+
+h2{
+	text-align: center;
+}
+#myNavbar ul li a {
+	color: #61122F;
+}
+.navbar-brand{
+font-size: 30px;	
+}
+
+/********** Large device **********/
 @media (min-width: 992px) {.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {float: left;}
   .col-lg-1 {
     width: 8.33%;
